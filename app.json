@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/home/home",  
+    "pages/me/me",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",  
+    "pages/register/register",
+    "pages/chat/chat",
+    "pages/detail/detail",
+    "pages/re1/re1",
+    "pages/feedback/feedback",
+    "pages/helpcenter/helpcenter",
+    "pages/myteam/myteam",
+    "pages/service/service"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3b89fd",
+    "navigationBarTitleText": "ChatGPT智能聊天助手",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [{
+        "pagePath" : "pages/home/home",
+        "text":"首页",
+        "iconPath":"images/首页2.png",
+        "selectedIconPath": "images/首页1.png"
+    },
+    {
+        "pagePath" : "pages/chat/chat",
+        "text":"聊天",
+        "iconPath":"images/聊天2.png",
+        "selectedIconPath": "images/聊天1.png"
+    },
+    {
+        "pagePath" : "pages/me/me",
+        "text":"个人中心",
+        "iconPath":"images/个人中心2.png",
+        "selectedIconPath": "images/个人中心1.png"
+    }
+    ]
+},
+
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

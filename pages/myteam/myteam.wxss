@@ -1,0 +1,40 @@
+page{
+  background: -webkit-linear-gradient(top,#e9f2ff,white, white);
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200rpx;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 400rpx;
+}
+
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.expertise {
+  font-size: 20rpx;
+  color: #666666;
+}

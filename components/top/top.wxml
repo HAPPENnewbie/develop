@@ -1,0 +1,13 @@
+<!--components/top/top.wxml-->
+<view class="top">
+    <view>
+    头像：
+        <image src="{{uInfo.imgUrl}} " mode="widthFix" />
+    </view>
+    <view>
+    昵称：{{uInfo.nike}}
+    </view>
+    <view>
+    ID：{{uInfo.id}}
+    </view>
+</view>

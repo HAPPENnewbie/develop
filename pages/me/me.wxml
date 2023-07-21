@@ -1,0 +1,55 @@
+<view class="container1">
+  <!-- 第一部分 -->
+  <view class="top">
+    <image class="background_image" src="/images/background.png" />
+    <image class="user_image" src="{{ mydata.avatarUrl ? mydata.avatarUrl :'/images/用户.png'}}" />
+    <text class="text_1">
+      <text>{{mydata.nickName}}</text>
+    </text>
+  </view>
+  <!-- 第二部分 -->
+  <view class="container2">
+    <view class="container_text">
+      <view class="text1">享受更多特权</view>
+      <view class="text2">人工智能 全场景问答 地表最强AI</view>
+    </view>
+    <button class="register" size="mini" wx:if="{{ !mydata.nickName }}" bindtap="gotologin">立即登录</button>
+    <button class="logout" size="mini" wx:if="{{ mydata.nickName }}" bindtap="onLogout">退出登录</button>
+  </view>
+   <!-- 第三部分 -->
+   <view class="container3" bindtap="isShowToast" >
+    <view class="function" >
+			<image class="image_1" src="/images/分销.png"></image>
+			<text class='text_2'>会员中心</text>
+      <image class="image-jiantou" src="/images/向右箭头.png"></image>
+		</view>
+  </view>
+  <view class="container3" bindtap="isShowToast">
+    <view class="function"  >
+			<image class="image_1" src="/images/卡密.png"></image>
+			<text class='text_2'>卡密兑换</text>
+      <image class="image-jiantou" src="/images/向右箭头.png"></image>
+		</view>
+  </view>
+  <view class="container3">
+    <view class="function">
+			<image class="image_1" src="/images/团队.png"></image>
+			<text class='text_2' bindtap="gotoMyteam">我的团队</text>
+      <image class="image-jiantou" src="/images/向右箭头.png"></image>
+		</view>
+  </view>
+  <view class="container3">
+    <view class="function" bindtap="gotoService">
+			<image class="image_1" src="/images/客服.png"></image>
+			<text class='text_2'>在线客服</text>
+      <image class="image-jiantou" src="/images/向右箭头.png"></image>
+		</view>
+  </view>
+  <view class="container3">
+    <view class="function" bindtap="gotoHelp">
+			<image class="image_1" src="/images/帮助.png"></image>
+			<text class='text_2'>意见反馈</text>
+      <image class="image-jiantou" src="/images/向右箭头.png"></image>
+		</view>
+  </view>
+</view>

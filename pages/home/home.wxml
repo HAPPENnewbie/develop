@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<view class="body">
+  <view class="swiper_view">
+    <swiper class="swiper_box" indicator-dots="{{indicatorDots}}"
+     autoplay="{{autoplay}}" current="{{current}}" interval="{{interval}}"
+     duration="{{duration}}" circular="{{circular}}"  indicator-active-color='white'>
+    <block wx:for="{{images}}" wx:key="index">
+      <swiper-item><image src="{{item}}" class="slide-image"></image></swiper-item>
+    </block>
+    </swiper>
+ </view>
+</view>
+
+<view id="font">
+  <text >你好！我是小<text id="fontPart">AI</text>\n一款智能聊天助手\n我可以回答你的任何问题</text>
+</view>
+<button id="btn_startchat" bindtap="gotoChat">开始对话</button>
+<view id="note">
+  <text>违规微信社区发言将会被限制对话</text>
+</view>

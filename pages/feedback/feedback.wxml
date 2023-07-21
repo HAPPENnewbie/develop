@@ -1,0 +1,18 @@
+<!--pages/feedback/feedback.wxml-->
+<!-- index.wxml -->
+<view class="container">
+  <view class="title">用户意见反馈</view>
+  <view class="form">
+    <view class="form-item">
+      <view class="label">选择意见类型：</view>
+      <view class="tag" bindtap="selectTag" data-tag="功能建议" class="{{tag === '功能建议' ? 'active' : ''}}">功能建议</view>
+      <view class="tag" bindtap="selectTag" data-tag="服务建议" class="{{tag === '服务建议' ? 'active' : ''}}">服务建议</view>
+      <view class="tag" bindtap="selectTag" data-tag="其他" class="{{tag === '其他' ? 'active' : ''}}">其他</view>
+    </view>
+    <view class="form-item">
+      <view class="label">意见反馈：</view>
+      <textarea class="textarea" placeholder="请输入您的意见和建议" bindinput="bindFeedbackInput" disabled="{{!tag}}"></textarea>
+    </view>
+    <button class="submit-button" bindtap="submitFeedback" disabled="{{!tag}}">提交</button>
+  </view>
+</view>

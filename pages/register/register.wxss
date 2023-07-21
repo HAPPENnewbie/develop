@@ -1,0 +1,48 @@
+/* pages/register/register.wxss */
+
+.tologin{
+    font-size: 40rpx;
+    margin-right:200rpx ;
+    font-weight: bold;
+}
+.toregister{
+    font-size: 80rpx;
+    font-weight: bold;
+}
+
+.container2{
+  width: 680rpx;
+  height: 600rpx;
+  border-radius: 20rpx;
+  position: relative;
+  box-shadow: 0 15rpx 10rpx -15rpx #7c7c7c;
+  background:linear-gradient(to right,#98a8e7,#d5d8e4);
+}
+
+.text1{
+    font-size: 20px;
+}
+.username{
+    margin-top: 20rpx;
+    padding: 40rpx;
+}
+input{
+    border: 1px solid gray;
+    height: 80rpx;
+    margin-top: 20rpx;
+    margin-bottom: 30rpx;
+    border-radius: 10rpx;
+}
+login{
+    margin-top: 20rpx;
+}
+.text3{
+    font-size: 15px;
+    color: rgb(240, 249, 255);
+    margin-left: 40rpx;
+}
+.text4{
+    font-size: 15px;
+    color: rgb(100, 193, 255);
+    margin-left: 240rpx;
+}

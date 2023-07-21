@@ -1,0 +1,14 @@
+<view class="team-container">
+  <block wx:for="{{teamData}}" wx:key="index">
+    <view class="team-member">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+      <view class="member-info">
+        <text class="name">{{item.name}}</text>
+        <text class="expertise">{{item.expertise}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+

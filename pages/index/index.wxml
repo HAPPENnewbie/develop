@@ -1,0 +1,20 @@
+
+<view wx:for="{{menu}}"  wx:key="index">
+<!-- index是索引从0开始 -->
+    {{index}}----{{item}}
+</view>
+<view>二维数组遍历</view>
+<view wx:for="{{menu2}}" wx:for-index="i" wx:key="i" wx:for-item="items">
+    <view wx:for="{{items}}" wx:key="index">
+        {{index}}----{{item}}
+    </view>
+</view>
+
+
+<view wx:for="{{names2}}" wx:key="index">
+    {{item.name}}----{{item.age}}----{{item.sex}}
+</view>
+---------------------------------------------
+<view bindtap="getDetail">
+    详细资料
+</view>

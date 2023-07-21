@@ -1,0 +1,10 @@
+<!--pages/helpcenter/helpcenter.wxml-->
+<view wx:for="{{tagList}}" wx:key="index"  data-index="{{index}}"
+  class="tag {{isSelected(index) ? 'selected' : ''}}"
+  bindtap="selectTag">
+  {{item}}
+</view>
+
+
+
+

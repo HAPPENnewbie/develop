@@ -1,0 +1,20 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+    <view class="container1">
+        <text class="tologin" >登录</text>
+        <text class="toregister" >注册</text>
+    </view>
+    <view class="container2">
+        <view class="username">
+            <text2>用户名</text2>
+            <input class="number" type="number"/>
+        <view class="text2">密码</view>
+        <input class="password" type="password" />
+        <button class="login">登录</button>
+        </view>
+        <text class="text3">登录遇到问题？</text>
+        <text class="text4">忘记密码？</text>
+
+       
+    </view>
+</view>
